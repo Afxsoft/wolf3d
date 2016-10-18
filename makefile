@@ -1,4 +1,16 @@
-.PHONY: all clean fclean re norme
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: aouloube <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2016/10/18 17:51:15 by aouloube          #+#    #+#              #
+#    Updated: 2016/10/18 17:51:52 by aouloube         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+.PHONY: all clean fclean re
 
 NAME = wolf3d
 
@@ -23,6 +35,3 @@ fclean: clean
 	rm -fv $(NAME)
 
 re: fclean all
-
-norme:
-	norminette $(SRC)

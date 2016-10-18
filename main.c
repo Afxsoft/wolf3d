@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aouloube <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/10/18 17:39:28 by aouloube          #+#    #+#             */
+/*   Updated: 2016/10/18 17:39:35 by aouloube         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "wolf3d.h"
 
 void	init_env(t_env *e)
 {
 	if (!(e->mlx = mlx_init()))
 		return ;
-	e->win = mlx_new_window(e->mlx, WIDTH, HEIGHT, "Wolf3D_42");
+	e->win = mlx_new_window(e->mlx, WIDTH, HEIGHT, "WOLF3D");
 	e->bpp = 8;
 	e->end = 0;
 	e->sl = WIDTH;
